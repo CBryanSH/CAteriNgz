@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Register</title>
+</head>
+<body class="regs">
+    <div class="logo"><a href="HomePage.html">CAteriNgz</a></div>
+    <div class="regwrapper">
+        <div class="regcontainer">
+            <h2>Register Form</h2>
+            <form action="" method="get" id="register-form">
+                <div class="form">
+                    <label>Name</label>
+                    <input type="text" name="name" id="name" placeholder="Name">
+                </div>
+                <div class="form">
+                    <label>Email</label>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <div class="form">
+                    <label>Address</label>
+                    <input type="text" name="address" id="address" placeholder="Address">
+                </div>
+                <div class="form">
+                    <label for="gender">Gender</label>
+                    <div class="gender-group">
+                        <label>
+                            <input type="radio" name="gender" value="male">
+                            Male
+                        </label><br>
+                        <label>
+                            <input type="radio" name="gender" value="female">
+                            Female
+                        </label>
+                    </div>
+                </div>
+                <div class="form">
+                    <label>Date of Birth</label>
+                    <input type="date" name="dob" id="dob">
+                </div>
+                <div class="form">
+                    <label>Password</label>
+                    <input type="password" name="pw" id="pw" placeholder="Enter your password">
+                </div>
+                <div class="form">
+                    <label>Confirm Password</label>
+                    <input type="password" name="pw2" id="pw2" placeholder="Re-enter your password">
+                </div>
+                <div class="buttons">
+                    <button onclick="validateAll()" type="button" class="rbtn" id="submitBtn">Register</button>
+                    <button type="reset" class="rbtn">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
